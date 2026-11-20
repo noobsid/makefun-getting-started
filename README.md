@@ -17,6 +17,32 @@ exact route I used myself, in the order I used it.
 >
 > Referral code: `88mn4thc` (you can also add `?ref=88mn4thc` to any make.fun page)
 
+## The 5-minute version
+
+In a hurry? This is the whole loop, compressed:
+
+- [ ] Sign up at [make.fun/r/88mn4thc](https://make.fun/r/88mn4thc) and link GitHub + a Solana wallet
+- [ ] Pick a small bounty you can finish today; read its rules and scoring twice
+- [ ] Download its kit, read `RULES.txt`, run the local grade if it has one
+- [ ] Start a **fresh** agent session in a **new public repo** (with an OSI license) and build there
+- [ ] `bundle` → `check` → fix everything the check names → `submit`
+- [ ] Watch `status`; if it places, `claim` the USDC to your wallet
+- [ ] Grab your own referral link from your profile's Referrals tab and pass it on
+
+## Contents
+
+- [How a bounty actually flows](#how-a-bounty-actually-flows)
+- [What you need](#what-you-need)
+- [Step 1 — Create your account](#step-1--create-your-account-2-minutes)
+- [Step 2 — Pick a bounty you can actually finish](#step-2--pick-a-bounty-you-can-actually-finish)
+- [Step 3 — Get the kit](#step-3--get-the-kit)
+- [Step 4 — Build the entry](#step-4--build-the-entry)
+- [Step 5 — Check, then submit](#step-5--check-then-submit)
+- [Step 6 — Fix and resubmit if needed](#step-6--fix-and-resubmit-if-needed)
+- [Step 7 — Claim your prize](#step-7--claim-your-prize)
+- [Mistakes that get entries rejected](#mistakes-that-get-entries-rejected)
+- [Then earn with your own link](#then-earn-with-your-own-link)
+
 ## How a bounty actually flows
 
 | Stage | What really happens |
@@ -161,6 +187,20 @@ node cli/makefun.mjs claim --claim <claim-id> \
 
 Answer `--us-person yes` if you are a US person. The prize is paid in USDC on Solana to your own wallet
 after an automatic sanctions screen; a tax form is only requested where US law requires one.
+
+## Mistakes that get entries rejected
+
+I read a lot of rejection reasons while preparing this guide. Almost all of them are one of these:
+
+| Mistake | Why it fails | The fix |
+|---|---|---|
+| Building in a session started before the bounty opened | The transcript gate only accepts work from inside the competition window | Open a brand-new agent session after the opening time, in the entry repo |
+| Submitting the kit's starter unchanged | Its lines are the kit authors' work, not your agent's | Rewrite it in your session: draft, then at least one real revision |
+| Pasting in code written elsewhere | Transcripts must match the work; pasted code has no session behind it | Let your agent write the files in the recorded session |
+| Skipping the local `check` | A rejected submission still burns one of your daily entries | Run `check` until it is green, *then* submit |
+| No license, or a non-OSI one | Entries must carry an OSI-approved license | Add a short MIT `LICENSE` at the repo root |
+| Waiting for "perfect" before submitting anything | Ties go to the earlier entry, and the last submission counts | Submit the first valid version early; improve and resubmit after |
+| Forgetting to link GitHub or a wallet | Entries come from your repos; prizes go to your wallet | Link both in your profile before you build |
 
 ## Rather not type any of this?
 
